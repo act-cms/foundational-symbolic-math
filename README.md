@@ -1,50 +1,32 @@
-# Foundations of Symbolic Mathematics in Python
+Foundations of Symbolic Mathematics in Python
+=============================================
 
-While many chemical problems can be solved by a "longhand" pen-and-paper
-approach, several advanced concepts rely on mathematical skills (e.g.,
-calculus, linear algebra, differential equations, variational optimization,
-etc.) with which not every student may feel comfortable. This module is meant
-to help students develop foundational skills in performing symbolic
-mathematical operations in Python. These modules are each structured with a few
-applications to chemical problem solving at the general chemistry (first-year)
-level, and provide any additional conceptual background when necessary.
+Physical chemistry describes chemical phenomena in the language of mathematics
+at a level of conceptual and theoretical rigor beyond that which many
+undergraduate chemistry students are typically unaccustomed. This means that
+for students of physical chemistry, they must develop a wide variety of
+mathematical skills "on the job," while leaving enough intellectual bandwidth
+to learn the physical chemistry concepts themselves. For many students this is
+an enormously challenging proposition, which contributes to physical
+chemistry's reputation as one of (if not the) most difficult courses taught on
+any college campus. While mathematical rigor is the cost of doing business in
+physical chemistry, being able to perform every requisite mathematical
+transformation by hand does not have to be a learning objective for the course.
+To make the study of physical chemistry more mathematically accessible for
+undergraduate chemistry students, the goal of this Module is to help students
+develop the cyberinfrastructure (CI) skills necessary to use Python as a
+symbolic and numerical mathematics engine for solving physical chemistry
+problems.
 
-Current Lessons:
-- Symbolic Algebra
+## Module Contents
 
-Planned Lessons (coming soon!):
-- Symbolic Calculus
+This Module is broken into lessons focusing on helping students develop the
+_essential CI skills_ for using Python as a mathematics engine in physical
+chemistry contexts, rather than deeply discussing the mathematics itself. 
 
-## Setup
-
-Notes on environment setup for materials hosted on various platforms.
-
-### Local Installation
-
-1. Create a new Conda environment to sandbox software stack
-```
-~$ conda create -n algwsym python=3.10 jupyter
-```
-2. Activate new Conda environment
-```
-~$ conda activate algwsym
-```
-3. Install required packages with `pip`, because that's all that distributes `algebra_with_sympy`
-```
-~$ pip install sympy-for-algebra
-~$ pip install algebra-with-sympy
-~$ pip install numpy matplotlib
-~$ pip install jupyterlab_myst
-```
-4. To ensure you are using the proper version of SymPy, uninstall any bare `sympy` package
-```
-~$ pip uninstall sympy
-```
-5. Any time you wish to run the code in the included lessons, 
-    1. Activate `algwsym` Conda environment
-        ```
-        ~$ conda activate algwsym
-        ```
-    2. Start your Jupyter lab or notebook instance from within the activated `algwsym` Conda environment
+| Lesson # | Directory             | Title                                       | Time    |
+|:--------:|:----------------------|:--------------------------------------------|:-------:|
+| 1        | `1_symbolic-algebra`  | Introduction to Symbolic Algebra in Python  | 1-2 hrs |
+| 2        | `2_symbolic-calculus` | Introduction to Symbolic Calculus in Python | 2-3 hrs |
 
 
